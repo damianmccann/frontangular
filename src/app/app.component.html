@@ -1,0 +1,5 @@
+<h1>Annuaire</h1>
+<input type="text" placeholder="Search" [(ngModel)] = "searchText" />
+<button (click)="handleSearch()">Search</button>
+<button (click)="handleList()">List</button>
+<div *ngFor="let entry of entries">{{entry}}</div>
